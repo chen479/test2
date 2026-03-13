@@ -1,7 +1,7 @@
 ---
+layout: default
 title: 第1章 离散时间信号与系统
 nav_order: 1
-layout: docs
 ---
 
 # 第1章 离散时间信号与系统
