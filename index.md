@@ -1,6 +1,6 @@
 ---
-title: 首页
-nav_order: 0
+title: Home
+layout: home
 ---
 
 # 数字信号处理教材知识体系
