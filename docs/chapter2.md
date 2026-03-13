@@ -1,4 +1,5 @@
 ---
+layout: default
 title: 第2章 Z变换
 nav_order: 2
 ---

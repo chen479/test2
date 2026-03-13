@@ -1,5 +1,6 @@
 ---
 title: 关于本项目
+layout: default
 nav_order: 100
 ---
 
