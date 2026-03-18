@@ -1,10 +1,9 @@
-﻿---
+---
 layout: default
 title: 第2章 离散时间信号与系统
 nav_order: 2
 ---
-<!-- 编码声明 -->
-<meta charset="utf-8">
+
 
 # 第2章 离散时间信号与系统
 
