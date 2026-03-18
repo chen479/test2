@@ -24,3 +24,6 @@ aux_links:
 
 # 如果需要支持代码高亮（默认已支持）
 highlighter: rouge
+
+encoding: utf-8
+markdown: kramdown # 推荐渲染引擎
