@@ -37,15 +37,15 @@ nav_order: 0
 
 所有代码按用途分类存放，可直接下载运行：
 
-- [`examples/`](codes/examples/) – 课堂演示的小型代码片段（Python/MATLAB）
-- [`labs/`](codes/labs/) – 各章配套实验的完整代码（含详细注释）
-- [`projects/`](codes/projects/) – 综合性课程设计项目（如滤波器设计、语音降噪系统）
+- [`examples/`](codes/examples) – 课堂演示的小型代码片段（Python/MATLAB）
+- [`labs/`](codes/labs) – 各章配套实验的完整代码（含详细注释）
+- [`projects/`](codes/projects) – 综合性课程设计项目（如滤波器设计、语音降噪系统）
 
 ---
 
 ## 📎 补充资源
 
-- [`resources/`](resources/external_resources/) – 存放参考文献、讲义PDF、外部链接等补充材料（正在完善中）
+- [`resources/`](resources/external_resources) – 存放参考文献、讲义PDF、外部链接等补充材料（正在完善中）
 
 ---
 
