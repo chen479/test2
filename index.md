@@ -45,7 +45,7 @@ nav_order: 0
 
 ## 📎 补充资源
 
-- [`resources/`](resources/) – 存放参考文献、讲义PDF、外部链接等补充材料（正在完善中）
+- [`resources/`](resources/external_resources/) – 存放参考文献、讲义PDF、外部链接等补充材料（正在完善中）
 
 ---
 
