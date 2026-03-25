@@ -1,0 +1,91 @@
+---
+layout: default
+title: 综合性课程设计项目
+nav_order: 3
+---
+
+# 综合性课程设计项目
+
+这里提供了几个综合性的数字信号处理课程设计项目，涵盖了从基础理论到实际应用的各个方面。每个项目都包含详细的设计要求、实现步骤和代码示例，适合作为课程设计或自主学习的参考。
+
+## 项目列表
+
+### 1. 数字滤波器设计与实现
+
+**项目目标**：设计并实现一个数字滤波器，满足给定的技术指标。
+
+**技术要求**：
+- 选择合适的滤波器类型（IIR或FIR）
+- 确定滤波器阶数和系数
+- 用MATLAB/Python实现滤波器
+- 分析滤波器的频率响应
+- 验证滤波器对实际信号的处理效果
+
+**项目文件**：
+- [`filter_design.m`](filter_design/filter_design.m)（MATLAB实现）
+- [`filter_design.py`](filter_design/filter_design.py)（Python实现）
+- [`README.md`](filter_design/README.md)（项目说明）
+
+### 2. 语音降噪系统
+
+**项目目标**：设计并实现一个基于数字信号处理的语音降噪系统。
+
+**技术要求**：
+- 分析噪声特性
+- 设计合适的降噪算法（如谱减法、维纳滤波器等）
+- 实现降噪系统
+- 评估降噪效果
+
+**项目文件**：
+- [`speech_denoise.m`](speech_denoise/speech_denoise.m)（MATLAB实现）
+- [`speech_denoise.py`](speech_denoise/speech_denoise.py)（Python实现）
+- [`README.md`](speech_denoise/README.md)（项目说明）
+
+### 3. 音频均衡器设计
+
+**项目目标**：设计并实现一个多频段音频均衡器。
+
+**技术要求**：
+- 设计多个不同频段的滤波器
+- 实现增益控制
+- 评估均衡效果
+- 提供用户界面
+
+**项目文件**：
+- [`audio_equalizer.m`](audio_equalizer/audio_equalizer.m)（MATLAB实现）
+- [`audio_equalizer.py`](audio_equalizer/audio_equalizer.py)（Python实现）
+- [`README.md`](audio_equalizer/README.md)（项目说明）
+
+### 4. 信号调制与解调系统
+
+**项目目标**：设计并实现一个数字调制与解调系统。
+
+**技术要求**：
+- 实现基本的数字调制方式（如PSK、QAM等）
+- 设计解调算法
+- 评估系统在不同信噪比下的性能
+
+**项目文件**：
+- [`modem_system.m`](modem_system/modem_system.m)（MATLAB实现）
+- [`modem_system.py`](modem_system/modem_system.py)（Python实现）
+- [`README.md`](modem_system/README.md)（项目说明）
+
+## 如何使用这些项目
+
+1. 选择一个感兴趣的项目
+2. 阅读项目的README.md文件，了解项目要求和实现步骤
+3. 运行相应的代码文件
+4. 根据需要修改参数，观察不同设置下的结果
+5. 可以基于现有项目进行扩展，添加新功能
+
+## 项目评估标准
+
+- 功能完整性：是否实现了所有要求的功能
+- 性能指标：是否达到了预期的性能指标
+- 代码质量：代码是否结构清晰、注释充分
+- 创新点：是否有独特的设计或实现方法
+- 文档完整性：项目说明是否详细、清晰
+
+---
+
+*这些项目案例旨在帮助学生巩固数字信号处理的理论知识，培养实际应用能力。欢迎根据具体课程要求进行调整和扩展。*
