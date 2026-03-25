@@ -16,6 +16,11 @@ just_the_docs:
 
 # 搜索配置
 search_enabled: true
+search:
+  heading_level: 3
+  previews: 5
+  tokenizer: whitespace
+  rel_url: false
 
 # 辅助链接（可选）
 aux_links:
