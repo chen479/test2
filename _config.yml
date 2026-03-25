@@ -16,6 +16,12 @@ just_the_docs:
 
 # 搜索配置
 search_enabled: true
+search:
+  button: true
+  heading_level: 2
+  previews: 3
+  tokenize: true
+  rel_url: false
 
 # 辅助链接（可选）
 aux_links:
@@ -24,5 +30,3 @@ aux_links:
 
 # 如果需要支持代码高亮（默认已支持）
 highlighter: rouge
-
-
