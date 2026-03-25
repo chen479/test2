@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 综合性课程设计项目
-nav_order: 3
+nav_exclude: true
 ---
 
 # 综合性课程设计项目
@@ -41,34 +41,6 @@ nav_order: 3
 - [`speech_denoise.py`](speech_denoise/speech_denoise.py)（Python实现）
 - [`README.md`](speech_denoise/README.md)（项目说明）
 
-### 3. 音频均衡器设计
-
-**项目目标**：设计并实现一个多频段音频均衡器。
-
-**技术要求**：
-- 设计多个不同频段的滤波器
-- 实现增益控制
-- 评估均衡效果
-- 提供用户界面
-
-**项目文件**：
-- [`audio_equalizer.m`](audio_equalizer/audio_equalizer.m)（MATLAB实现）
-- [`audio_equalizer.py`](audio_equalizer/audio_equalizer.py)（Python实现）
-- [`README.md`](audio_equalizer/README.md)（项目说明）
-
-### 4. 信号调制与解调系统
-
-**项目目标**：设计并实现一个数字调制与解调系统。
-
-**技术要求**：
-- 实现基本的数字调制方式（如PSK、QAM等）
-- 设计解调算法
-- 评估系统在不同信噪比下的性能
-
-**项目文件**：
-- [`modem_system.m`](modem_system/modem_system.m)（MATLAB实现）
-- [`modem_system.py`](modem_system/modem_system.py)（Python实现）
-- [`README.md`](modem_system/README.md)（项目说明）
 
 ## 如何使用这些项目
 
