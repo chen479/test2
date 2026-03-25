@@ -24,7 +24,7 @@ nav_exclude: true
 **项目文件**：
 - [`filter_design.m`](filter_design/filter_design.m)（MATLAB实现）
 - [`filter_design.py`](filter_design/filter_design.py)（Python实现）
-- [`README.md`](filter_design/README.md)（项目说明）
+- [项目详情](filter_design/)（点击查看完整项目说明）
 
 ### 2. 语音降噪系统
 
@@ -39,13 +39,13 @@ nav_exclude: true
 **项目文件**：
 - [`speech_denoise.m`](speech_denoise/speech_denoise.m)（MATLAB实现）
 - [`speech_denoise.py`](speech_denoise/speech_denoise.py)（Python实现）
-- [`README.md`](speech_denoise/README.md)（项目说明）
+- [项目详情](speech_denoise/)（点击查看完整项目说明）
 
 
 ## 如何使用这些项目
 
 1. 选择一个感兴趣的项目
-2. 阅读项目的README.md文件，了解项目要求和实现步骤
+2. 点击"项目详情"链接查看完整的项目说明
 3. 运行相应的代码文件
 4. 根据需要修改参数，观察不同设置下的结果
 5. 可以基于现有项目进行扩展，添加新功能
