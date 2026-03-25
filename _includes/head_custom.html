@@ -1,4 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script>
   window.MathJax = {
     tex: {
@@ -6,20 +5,12 @@
       displayMath: [['$$', '$$'], ['\\[', '\\]']],
       processEscapes: true,
       processEnvironments: true,
-      packages: ['base', 'ams', 'newcommand']
+      packages: {'[+]': ['noerrors', 'noundefined']}
     },
     svg: { fontCache: 'global' },
     options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      ignoreHtmlClass: 'tex2jax_ignore',
-      processHtmlClass: 'tex2jax_process'
-    },
-    startup: {
-      ready: function() {
-        MathJax.startup.defaultReady();
-        // 强制重新渲染所有数学公式
-        MathJax.typeset();
-      }
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
