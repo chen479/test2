@@ -12,22 +12,17 @@ nav_order: 0
 
 ## 📚 教材章节
 
-全套教材共分为12章，可按顺序学习，也可根据需求跳转。
+全套教材共分为7章，可按顺序学习，也可根据需求跳转。
 
 | 章节 | 标题 | 内容简介 |
 |:----:|:-----|:---------|
 | 第1章 | [绪论](docs/chapter1-intro) | 数字信号处理的基本概念、系统组成、应用领域 |
-| 第2章 | [离散时间信号与系统](docs/chapter2-discrete-signals) | 序列、基本信号、LTI系统、卷积和、差分方程 |
-| 第3章 | [z变换与离散时间傅里叶变换](docs/chapter3-ztransform) | z变换、收敛域、性质、逆z变换、DTFT、频率响应 |
-| 第4章 | [信号的采样与重建](docs/chapter4-sampling) | 采样定理、混叠、重建、量化误差 |
-| 第5章 | [离散傅里叶变换（DFT）](docs/chapter5-dft) | DFT定义、性质、圆周卷积、频域采样、线性卷积实现 |
-| 第6章 | [快速傅里叶变换（FFT）](docs/chapter6-fft) | 基-2 FFT算法（DIT/DIF）、IFFT、实序列优化 |
-| 第7章 | [数字滤波器的结构](docs/chapter7-filter-structures) | 滤波器分类、IIR/FIR基本结构、流图表示 |
-| 第8章 | [IIR滤波器设计](docs/chapter8-iir-filter) | 模拟原型、冲激响应不变法、双线性变换、频率转换 |
-| 第9章 | [FIR滤波器设计](docs/chapter9-fir-filter) | 线性相位条件、窗函数法、频率采样法、IIR与FIR比较 |
-| 第10章 | [有限字长效应](docs/chapter10-finite-word) | 数的表示、量化误差、系数量化、运算舍入误差 |
-| 第11章 | [多速率信号处理](docs/chapter11-multirate) | 抽取、插值、多相结构、采样率转换、应用 |
-| 第12章 | [典型应用](docs/chapter12-applications) | 语音处理、音频均衡、生物医学、雷达、与机器学习 |
+| 第2章 | [时域离散信号和时域离散系统](docs/chapter2-discrete-signals) | 序列、基本信号、LTI系统、卷积和、差分方程、信号的采样与重建 |
+| 第3章 | [时域离散信号和系统的频域分析](docs/chapter3-ztransform) | z变换、收敛域、性质、逆z变换、DTFT、频率响应 |
+| 第4章 | [离散傅里叶变换](docs/chapter4-dft) | DFT定义、性质、圆周卷积、频域采样、线性卷积实现 |
+| 第5章 | [快速傅里叶变换](docs/chapter5-fft) | 基-2 FFT算法（DIT/DIF）、IFFT、实序列优化 |
+| 第6章 | [无限脉冲响应数字滤波器的设计](docs/chapter6-iir-filter) | 模拟原型、冲激响应不变法、双线性变换、频率转换、IIR滤波器基本结构 |
+| 第7章 | [有限脉冲响应数字滤波器的设计](docs/chapter7-fir-filter) | 线性相位条件、窗函数法、频率采样法、FIR滤波器基本结构 |
 
 > 每章末尾配有习题和实验指导，代码和实验资源可在下方链接中获取。
 
