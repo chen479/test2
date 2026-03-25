@@ -1,3 +1,9 @@
+---
+layout: default
+title: 语音降噪系统项目
+nav_order: 2
+---
+
 # 语音降噪系统项目
 
 ## 项目目标
@@ -21,8 +27,8 @@
 
 ## 项目文件
 
-- `speech_denoise.m`：MATLAB实现
-- `speech_denoise.py`：Python实现
+- [`speech_denoise.m`](speech_denoise.m)：MATLAB实现
+- [`speech_denoise.py`](speech_denoise.py)：Python实现
 
 ## 运行说明
 

@@ -1,3 +1,9 @@
+---
+layout: default
+title: 数字滤波器设计与实现项目
+nav_order: 1
+---
+
 # 数字滤波器设计与实现项目
 
 ## 项目目标
@@ -24,8 +30,8 @@
 
 ## 项目文件
 
-- `filter_design.m`：MATLAB实现
-- `filter_design.py`：Python实现
+- [`filter_design.m`](filter_design.m)：MATLAB实现
+- [`filter_design.py`](filter_design.py)：Python实现
 
 ## 运行说明
 
