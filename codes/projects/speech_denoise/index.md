@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 语音降噪系统项目
-nav_order: 2
+nav_exclude: true
 ---
 
 # 语音降噪系统项目

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 数字滤波器设计与实现项目
-nav_order: 1
+nav_exclude: true
 ---
 
 # 数字滤波器设计与实现项目
