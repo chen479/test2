@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 语音降噪系统项目
+nav_parent: 综合性课程设计项目
 nav_exclude: true
 ---
 

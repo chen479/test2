@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 数字滤波器设计与实现项目
+nav_parent: 综合性课程设计项目
 nav_exclude: true
 ---
 
