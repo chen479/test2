@@ -27,16 +27,17 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1.160.0
-        with:
-          ruby-version: '3.3' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Install Ruby and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install bundler
+      - name: Install gems
+        run: bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -54,7 +55,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
