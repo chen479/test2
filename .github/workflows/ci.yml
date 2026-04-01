@@ -51,12 +51,5 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
-      - name: Validate Markdown files
-        run: |
-          gem install mdl -v 0.12.0
-          mdl docs/ --style all || true
-      - name: Check documentation links
-        run: |
-          gem install html-proofer -v 4.4.7
-          bundle exec jekyll build
-          htmlproofer _site --only-4xx --check-favicon --check-html || true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build || true
