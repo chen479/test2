@@ -72,7 +72,9 @@ nav:
 
 # 代码高亮配置
 highlighter: rouge
-markdown:
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: true
