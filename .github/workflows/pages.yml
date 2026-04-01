@@ -37,13 +37,13 @@ jobs:
           sudo apt-get install -y ruby-full build-essential zlib1g-dev
           sudo gem install bundler
       - name: Install gems
-        run: bundle install
+        run: sudo bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: sudo bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
