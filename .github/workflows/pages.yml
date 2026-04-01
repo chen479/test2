@@ -35,7 +35,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ruby-full build-essential zlib1g-dev
-          gem install bundler
+          sudo gem install bundler
       - name: Install gems
         run: bundle install
       - name: Setup Pages
