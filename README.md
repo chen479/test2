@@ -1,174 +1,91 @@
-# just-the-docs-template
+# 基于GitHub的数字信号处理教材知识体系构建与资源管理平台
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+本项目是一个功能完整的数字信号处理（DSP）教材知识体系构建与资源管理平台，基于GitHub平台实现，旨在提供系统化的DSP学习资源和自动化管理方案。
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+## 项目功能
 
-More specifically, the created site:
+1. **知识体系结构化建模**：研究DSP课程知识体系的结构化建模方法，设计适合版本控制与自动化管理的知识元数据规范与分类体系。
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+2. **版本管理策略**：利用Git的分支、标签、提交历史等核心功能，对教材（PDF）、源代码（Python/Matlab）、实验手册、课件、数据文件等异构资源进行有效的版本追踪、协同编辑与历史回溯。
 
-To get started with creating a site, simply:
+3. **CI/CD自动化流水线**：利用GitHub Actions构建自动化工作流，实现针对代码资源的自动语法检查与测试、文档资源的自动格式校验与构建、以及整体知识仓库的自动打包与发布。
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+4. **静态站点生成**：应用Jekyll静态网站生成器，将GitHub仓库中结构化的Markdown文档、代码示例等资源，动态生成为一个具备良好导航、搜索与阅读体验的可公开访问网站（GitHub Pages）。
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+5. **可维护性与可扩展性**：设计清晰的仓库目录结构、规范的提交信息约定、完善的README与贡献指南，确保平台易于后续维护、功能扩展，并能作为模板推广至其他课程。
 
-After completing the creation of your new site on GitHub, update it as needed:
+## 预期成果
 
-## Replace the content of the template pages
+- **功能完整的GitHub仓库实例**：包含精心设计的目录结构、示例性的DSP课程资源（如FFT、滤波器设计等经典理论的代码与文档），并实践完整的Git工作流。
 
-Update the following files to your own content:
+- **可复用的CI/CD自动化配置方案**：以YAML文件形式提供，能够自动完成资源校验、网站构建与部署，提升资源更新效率。
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+- **部署在GitHub Pages上的静态知识门户网站**：网站内容与仓库同步，直观展示DSP知识体系，提供资源的在线浏览与下载。
 
-## Changing the version of the theme and/or Jekyll
+## 仓库目录结构
 
-Simply edit the relevant line(s) in the `Gemfile`.
+```
+.
+├── .github/            # GitHub相关配置
+│   ├── workflows/      # GitHub Actions工作流配置
+│   │   ├── ci.yml      # 持续集成配置
+│   │   └── pages.yml   # GitHub Pages部署配置
+│   └── dependabot.yml  # 依赖自动更新配置
+├── _includes/          # Jekyll模板包含文件
+├── codes/              # 代码资源
+│   ├── examples/       # 示例代码
+│   ├── labs/           # 实验代码
+│   └── projects/       # 项目代码
+├── docs/               # 文档资源
+│   ├── chapter1-intro.md         # 第一章：引言
+│   ├── chapter2-discrete-signals.md  # 第二章：离散信号
+│   ├── chapter3-ztransform.md    # 第三章：Z变换
+│   ├── chapter4-dft.md            # 第四章：离散傅里叶变换
+│   ├── chapter5-fft.md            # 第五章：快速傅里叶变换
+│   ├── chapter6-iir-filter.md     # 第六章：IIR滤波器
+│   ├── chapter7-fir-filter.md     # 第七章：FIR滤波器
+│   └── about.md                   # 关于本项目
+├── resources/          # 其他资源
+├── .gitignore          # Git忽略文件配置
+├── Gemfile             # Ruby依赖配置
+├── Gemfile.lock        # Ruby依赖锁定文件
+├── LICENSE             # 许可证文件
+├── README.md           # 项目说明文件
+├── _config.yml         # Jekyll配置文件
+├── convert_encoding.py # 编码转换工具
+└── index.md            # 网站首页
+```
 
-## Adding a plugin
+## 快速开始
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+### 本地构建与预览
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+假设您已安装 [Jekyll] 和 [Bundler]：
 
-- Add the following to your site's `Gemfile`:
+1. 进入项目根目录
+2. 运行 `bundle install` 安装依赖
+3. 运行 `bundle exec jekyll serve` 构建并预览网站，访问 `localhost:4000/test2`
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+### 部署到GitHub Pages
 
-- And add the following to your site's `_config.yml`:
+1. 确保您的 `_config.yml` 文件配置正确
+2. 推送代码到GitHub仓库的 `main` 分支
+3. GitHub Actions 将自动构建并部署网站
+4. 访问 `https://your-username.github.io/test2` 查看部署结果
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+## 贡献指南
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 文件了解如何贡献代码和资源。
 
-## Publishing your site on GitHub Pages
+## 代码规范
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
+- 提交信息应遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
+- 代码应包含适当的注释和文档
+- 新增功能应添加相应的测试
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
+## 许可证
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+本项目采用 [MIT License](LICENSE) 许可证。
 
 [Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
 [Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
