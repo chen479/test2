@@ -5,14 +5,19 @@ theme: just-the-docs
 
 url: https://chen479.github.io/test2
 
-aux_links:
-  Template Repository: https://github.com/chen479/test2
-
-# 左侧导航配置（通常默认即可）
+# 左侧导航配置
 just_the_docs:
   # 是否显示最后修改时间
   last_edit_timestamp: true
   last_edit_time_format: "%b %e %Y at %I:%M %p"
+  # 导航层级
+  nav_level: 3
+  # 标题锚点
+  heading_anchors: true
+  # 代码块复制按钮
+  code_copy: true
+  # 深色模式
+  color_scheme: light
 
 # 搜索配置
 search_enabled: true
@@ -21,11 +26,59 @@ search:
   previews: 5
   tokenizer: whitespace
   rel_url: false
+  # 搜索结果排序
+  rank_by: weight
 
-# 辅助链接（可选）
+# 辅助链接
 aux_links:
   "GitHub 仓库":
     - "//github.com/chen479/test2"
+  "贡献指南":
+    - "/test2/CONTRIBUTING.html"
 
-# 如果需要支持代码高亮（默认已支持）
+# 导航菜单
+nav:
+  - title: "首页"
+    url: /
+    children:
+      - title: "关于本项目"
+        url: /about.html
+  - title: "课程内容"
+    children:
+      - title: "第一章：引言"
+        url: /chapter1-intro.html
+      - title: "第二章：离散信号"
+        url: /chapter2-discrete-signals.html
+      - title: "第三章：Z变换"
+        url: /chapter3-ztransform.html
+      - title: "第四章：离散傅里叶变换"
+        url: /chapter4-dft.html
+      - title: "第五章：快速傅里叶变换"
+        url: /chapter5-fft.html
+      - title: "第六章：IIR滤波器"
+        url: /chapter6-iir-filter.html
+      - title: "第七章：FIR滤波器"
+        url: /chapter7-fir-filter.html
+  - title: "代码资源"
+    children:
+      - title: "示例代码"
+        url: /codes/examples/index.html
+      - title: "实验代码"
+        url: /codes/labs/index.html
+      - title: "项目代码"
+        url: /codes/projects/index.html
+  - title: "资源下载"
+    url: /resources/external_resources.html
+
+# 代码高亮配置
 highlighter: rouge
+markdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+      start_line: 1
+
+# 插件配置
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
