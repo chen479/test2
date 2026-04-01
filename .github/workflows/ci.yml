@@ -18,6 +18,8 @@ jobs:
           sudo apt-get install -y ruby-full build-essential zlib1g-dev
           sudo gem install bundler
       - name: Install gems
-        run: sudo bundle install
+        run: |
+          sudo bundle install --verbose
       - name: Build with Jekyll
-        run: sudo bundle exec jekyll build
+        run: |
+          sudo bundle exec jekyll build --verbose
