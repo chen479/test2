@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 外部库资源
-
+nav_exclude: true
 ---
 
 # 📚 推荐的DSP开源库
