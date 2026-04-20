@@ -14,5 +14,5 @@ nav_exclude: true
 | Think DSP | Allen B. Downey / O'Reilly | 开源教材，代码驱动，适合Python实践 | [在线阅读](https://greenteapress.com/thinkdsp/) |
 
 
-> **说明**：以上PDF文件仅供学习参考，请尊重版权。如无法下载，请尝试使用校园网或联系教师。
+---
 
