@@ -17,4 +17,3 @@ nav_exclude: true
 | **TorchFX** | Python | GPU加速DSP，拥抱AI | [链接](https://github.com/matteospanio/torchfx) |
 | **scipy.signal** | Python | SciPy信号处理模块 | [链接](https://docs.scipy.org/doc/scipy/reference/signal.html) |
 
-[← 返回资源首页](index)

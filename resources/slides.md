@@ -32,7 +32,7 @@ nav_exclude: true
 | 第5章 离散傅里叶变换 | DFT变换定义、性质、定理，DFT变换与卷积 | [下载PDF](https://dsp.whu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1472550647&wbfileid=6BF7B41A6D0D3B21508213602E3C1FD7) |
 | 第6章 快速傅里叶变换 | FFT变换历史，时间/频率抽取FFT，FFT计算IDFT，FFT应用 | [下载PDF](https://dsp.whu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1472550647&wbfileid=7D28598DC258ED098444DF1DF24A7727) |
 
-> **来源说明**：以上课件为武汉大学信号处理研究室余磊老师《2018年秋数字信号处理》课程的配套材料，经核实链接可直接访问下载[reference:0]。
+> **来源说明**：以上课件为武汉大学信号处理研究室余磊老师《2018年秋数字信号处理》课程的配套材料，经核实链接可直接访问下载。
 
 ---
 
@@ -45,4 +45,3 @@ nav_exclude: true
 
 *以上课件仅供学习参考，版权归原作者所有。如有链接失效，请尝试更换网络环境或使用校园网访问。*
 
-[← 返回资源首页](index)
