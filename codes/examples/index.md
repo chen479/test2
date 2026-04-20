@@ -12,8 +12,8 @@ nav_exclude: true
 
 ## 示例列表
 
-[MATLAB FFT 示例](#matlab-fft-示例)
-[Python 正弦波生成示例](#python-正弦波生成示例)
+[1.MATLAB FFT 示例](#matlab-fft-示例)
+[2.Python 正弦波生成示例](#python-正弦波生成示例)
 
 ---
 
