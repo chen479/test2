@@ -10,4 +10,3 @@ nav_order: 100
 
 **作者**：Chen 
 
-平台基于 GitHub Pages + Jekyll 搭建，所有内容均开源于 [GitHub 仓库](https://github.com/chen479/test2)。
