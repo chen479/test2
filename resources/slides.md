@@ -11,7 +11,14 @@ nav_exclude: true
 
 ---
 
-##  教材配套PPT
+## 示例列表
+
+[1.教材配套PPT](#教材配套PPT)
+[2.高校课程课件](#高校课程课件)
+[3.数字信号处理硬件实现方式PPT](#数字信号处理硬件实现方式PPT)
+
+---
+## 教材配套PPT
 
 | 课件名称 | 来源 | 说明 | 链接 |
 |----------|------|------|------|
@@ -21,7 +28,7 @@ nav_exclude: true
 
 ---
 
-##  高校课程课件
+## 高校课程课件
 
 | 章节 | 内容 | 链接 |
 |------|------|------|
@@ -33,12 +40,17 @@ nav_exclude: true
 | 第6章 快速傅里叶变换 | FFT变换历史，时间/频率抽取FFT，FFT计算IDFT，FFT应用 | [下载PDF](https://dsp.whu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1472550647&wbfileid=7D28598DC258ED098444DF1DF24A7727) |
 
 ---
-##  数字信号处理硬件实现方式PPT
+## 数字信号处理硬件实现方式PPT
 
 | 课件名称 | 链接 |
 |----------|------|
 | CPU工作过程举例 | [下载PPT](DSP Hardware Implementation Approaches/CPU工作过程举例.pptx) |
-
+| DSP（2018＿1）数字信号处理硬件设计技术序 | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿1）数字信号处理硬件设计技术序.ppt) |
+| DSP（2018＿2） | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿2）.pptx) |
+| DSP（2018＿3）数字信号处理硬件设计技术 | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿3）数字信号处理硬件设计技术.ppt) |
+| DSP（2018＿4）数字信号处理硬件设计技术 | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿4）数字信号处理硬件设计技术.ppt) |
+| DSP（2018＿5） | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿5）.pptx) |
+| DSP（2018＿6） | [下载PPT](DSP Hardware Implementation Approaches/DSP（2018＿6）.ppt) |
 ---
 
 
