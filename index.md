@@ -38,7 +38,7 @@ nav_order: 0
 
 ---
 
-## 📎 其他资源
+## 📎 PPT/PDF/外部开源库资源
 
 - [`resources/`](resources/external_resources) – 存放参考文献、讲义PDF、外部链接等补充材料（正在完善中）
 
